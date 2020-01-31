@@ -36,7 +36,7 @@ import javafx.scene.shape.Circle;
 import javafx.scene.paint.Color;
 
 /**
- *
+ * additional information
  * @author kwadwooteng-amoko
  */
 public class FXMLDocumentController implements Initializable {
@@ -48,6 +48,9 @@ public class FXMLDocumentController implements Initializable {
 
     @FXML
     private TextField Trade_Amount;
+    
+    @FXML
+    private TextField stop_loss_parameter;
 
     @FXML
     private Label label;
@@ -119,7 +122,12 @@ public class FXMLDocumentController implements Initializable {
         PoloniexService ps = new PoloniexService();
         ControllerValues cv = new ControllerValues();
 
-         
+        
+        //starting stop loss set at 15 percent
+        stop_loss_parameter.setText("15");
+        
+        // starting price of 5000 usd
+        Trade_Amount.setText("5000");
          
         try {
             cv = ps.readJson();
@@ -151,7 +159,6 @@ public class FXMLDocumentController implements Initializable {
              
             long temp;
             temp = System.currentTimeMillis() / 1000L;
-             System.out.println("hello me");
             System.out.println("hello>>>>>>>>>"+String.valueOf(temp));
 
             // populate window
@@ -172,7 +179,6 @@ public class FXMLDocumentController implements Initializable {
             returnYtdLabel3.setText(set.getCount().toString());
             returnYtdLabel31.setText(set.getSqrt(set.getStd()).setScale(roundingPrecision, BigDecimal.ROUND_UP).toString());
         
-
             
           
 

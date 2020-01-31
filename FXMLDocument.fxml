@@ -27,7 +27,7 @@
       </TabPane>
       <CheckBox layoutX="232.0" layoutY="40.0" mnemonicParsing="false" />
       <CheckBox layoutX="232.0" layoutY="67.0" mnemonicParsing="false" />
-      <TextField layoutX="232.0" layoutY="89.0" prefHeight="27.0" prefWidth="69.0" />
+      <TextField fx:id="stop_loss_parameter" layoutX="232.0" layoutY="89.0" prefHeight="27.0" prefWidth="69.0" />
       <Label fx:id="returnYtdLabel1" layoutX="247.0" layoutY="271.0" minHeight="16" minWidth="69" text="ret" />
       <Label fx:id="returnYtdLabel2" layoutX="247.0" layoutY="292.0" minHeight="16" minWidth="69" text="ret" />
       <Label fx:id="returnYtdLabel3" layoutX="247.0" layoutY="313.0" minHeight="16" minWidth="69" text="ret" />
@@ -41,8 +41,8 @@
       <Label fx:id="returnYtdLabel11" layoutX="148.0" layoutY="202.0" minHeight="16" minWidth="69" text="ret" />
       <Label fx:id="returnYtdLabel111" layoutX="148.0" layoutY="225.0" minHeight="16" minWidth="69" text="ret" />
       <Label fx:id="returnYtdLabel1111" layoutX="334.0" layoutY="202.0" minHeight="16" minWidth="69" text="ret" />
-      <Button fx:id="go_button" layoutX="420.0" layoutY="100.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="60.0" prefWidth="216.0" text="GO" />
-      <Button layoutX="27.0" layoutY="374.0" mnemonicParsing="false" prefHeight="132.0" prefWidth="276.0" text="CANCEL TRADE" />
+      <Button fx:id="go_button" layoutX="420.0" layoutY="100.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="60.0" prefWidth="216.0" text="BUY ORDER" />
+      <Button layoutX="27.0" layoutY="374.0" mnemonicParsing="false" prefHeight="132.0" prefWidth="276.0" text="SELL ORDER" />
       <Label fx:id="returnYtdLabel11111" layoutX="333.0" layoutY="225.0" minHeight="16" minWidth="69" text="ret" />
       <Label fx:id="label1111111121" layoutX="218.0" layoutY="225.0" minHeight="16" minWidth="69" text="Stop Loss (%)" />
       <ToggleButton fx:id="btc_button" layoutX="231.0" layoutY="117.0" mnemonicParsing="false" text="BTC" />
